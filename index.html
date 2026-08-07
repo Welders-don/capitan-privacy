@@ -29,6 +29,8 @@
   <li><strong>Video metadata and subtitle text (YouTube):</strong> When a YouTube video has caption tracks, subtitles are fetched directly from YouTube. The video URL, language, duration, and subtitle text are also sent to our backend for usage accounting.</li>
   <li><strong>Video metadata (other platforms):</strong> For non-YouTube videos, the video URL and platform type are sent to our backend as part of the transcription request.</li>
 
+  <li><strong>Anonymous interaction events:</strong> Aggregate, non-personal events about how the extension is used &mdash; for example that a transcription started, an export happened, or a tab capture failed, along with technical context such as the export format or failure reason. These contain no transcript text, no full page URLs, and no personal identifiers, and are tied only to your anonymous usage token. They are used solely to diagnose problems and improve the extension.</li>
+
   <li><strong>Shared post URL (optional):</strong> If you choose to participate in the &quot;Get more free minutes&quot; program, the public URL of the social media post you submit is sent to our backend and stored to verify the share and prevent duplicate claims. Participation is entirely optional. The URL is not used for any other purpose and is not linked to any personal identity.</li>
 
   <li><strong>IP address (on uninstall):</strong> When the extension is uninstalled, your IP address is sent to our backend server and logged, to detect abnormal uninstall spikes (e.g. a broken release) and understand aggregate usage. It is not linked to your identity and is not shared with third parties.</li>
@@ -42,6 +44,8 @@
   <li><strong>Browser fingerprint</strong> is used only to detect abuse and prevent credit limit bypass. It is never used for advertising, profiling, or tracking.</li>
   <li><strong>Video metadata and subtitle text</strong> are used to record credit consumption and provide transcription history within the extension.</li>
   <li><strong>Shared post URL</strong> is used only to verify your participation in the optional share program and to grant the corresponding usage limit boost.</li>
+
+  <li><strong>Interaction events</strong> are used only in aggregate to understand where the extension succeeds or fails and to prioritize improvements. They are never used for advertising, profiling, or cross-site tracking.</li>
 
   <li>We do not use any collected data for advertising, behavioral tracking, or sale to third parties.</li>
 </ul>
